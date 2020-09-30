@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Trusted Types script</title>
+</head>
+
+<body>
+	<script src="/policy.js" crossorigin="anonymous" integrity="sha256-JIwEJHmY6Cj2+wxSQwz/xCkV/2thQZx25CzuAzxYqJ4="></script>
+	<script>
+		const lol = trustedTypes.defaultPolicy.createScriptURL( '/sw.js' );
+		console.log( lol.toString() );
+	</script>
